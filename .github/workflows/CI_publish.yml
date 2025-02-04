@@ -16,5 +16,5 @@ jobs:
     with:
       build-id: ${{ github.run_id }}
       environment: main
-      project_veracode: Verademo3
+      project_veracode: Verademo2
     
