@@ -15,6 +15,6 @@ jobs:
     secrets: inherit
     with:
       build-id: ${{ github.run_id }}
-      environment: main
-      project_veracode: Verademo2
+      environment: prod
+      project_veracode: Verademo3
     
