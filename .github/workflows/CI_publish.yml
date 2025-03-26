@@ -9,6 +9,7 @@ jobs:
     with:
       project: "Verademo3"         # Nome do projeto para o Veracode
       environment: "dev"                    # Ambiente (dev, prod, etc.)
+      project_veracode: ${{ inputs.project }}
       veracode_policy_name: "AFRIKA_AST"
     secrets: inherit
     
