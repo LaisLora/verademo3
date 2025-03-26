@@ -1,20 +1,14 @@
-name: CI Workflow
 on:
   push:
     branches:
-      - main   
-     
-                       
+      - main
+
 jobs:
-  #build:
-    #uses: LaisLora/github-actions-templates/.github/workflows/build.yml@main
-    #secrets: inherit
-  veracode:
-    #needs: build
-    uses: LaisLora/github-actions-templates/.github/workflows/veracode-template.yml@main
-    secrets: inherit
+  CallTemplate:
+    uses: templetes-build/.github/workflows/main.yml@main
     with:
-      build-id: ${{ github.run_id }}
-      environment: prod
-      project_veracode: Verademo3
+      project_veracode: "Verademo3"         # Nome do projeto para o Veracode
+      environment: "dev"                    # Ambiente (dev, prod, etc.)
+      veracode_policy_name: "AFRIKA_AST"
+    secrets: inherit
     
