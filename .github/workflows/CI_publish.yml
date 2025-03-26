@@ -7,9 +7,8 @@ jobs:
   CallTemplate:
     uses: LaisLora/templetes-build/.github/workflows/main.yml@main
     with:
-      project: "Verademo3"         # Nome do projeto para o Veracode
+      project_veracode: "Verademo3"         # Nome do projeto para o Veracode
       environment: "dev"                    # Ambiente (dev, prod, etc.)
-      project_veracode: ${{ inputs.project }}
       veracode_policy_name: "AFRIKA_AST"
     secrets: inherit
     
