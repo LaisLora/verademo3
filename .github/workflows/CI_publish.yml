@@ -10,5 +10,5 @@ jobs:
       project: "Verademo3"         # Nome do projeto para o Veracode
       environment: "dev"                    # Ambiente (dev, prod, etc.)
       veracode_policy_name: "AFRIKA_AST"
-    secrets: inherit
+    secrets: inherit 
     
