@@ -5,7 +5,7 @@ on:
 
 jobs:
   CallTemplate:
-    uses: LaisLora/templetes-build/.github/workflows/main.yml@main
+    uses: LaisLora/.github/workflows/main.yml@main
     with:
       project: "Verademo3"         # Nome do projeto para o Veracode
       environment: "dev"                    # Ambiente (dev, prod, etc.)
