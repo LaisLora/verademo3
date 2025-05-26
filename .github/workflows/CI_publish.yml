@@ -6,7 +6,6 @@ jobs:
   call:
     uses: LaisLora/github-actions-templates/.github/workflows/template_veracode_fluxo.yml@main
     with:
-      build-id: ${{ github.run_id }}.${{ github.run_number }}
       environment: dev
       project: verademo3
     secrets: inherit  
