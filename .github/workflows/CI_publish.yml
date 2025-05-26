@@ -8,7 +8,6 @@ jobs:
     with:
       build-id: ${{ github.run_id }}.${{ github.run_number }}
       environment: dev
-      project_veracode: verademo3
-      veracode_policy_name: AFRIKA_AST
+      project: verademo3
     secrets: inherit  
  
