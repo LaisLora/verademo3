@@ -4,7 +4,7 @@ on:
       - main
 jobs:
   call:
-    uses: LaisLora/github-actions-templates/.github/workflows/template_veracode_fluxo.yml@main
+    uses: LaisLora/github-actions-templates/.github/workflows/CICD_security.yml@main
     with:
       environment: dev
       project: verademo3
