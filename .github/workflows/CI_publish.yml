@@ -6,7 +6,7 @@ jobs:
   call:
     uses: LaisLora/github-actions-templates/.github/workflows/CICD_security.yml@main
     with:
-      environment: dev
+      environment: prod
       project: Verademo3
     secrets: inherit  
       
